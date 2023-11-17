@@ -1,0 +1,44 @@
+<!-- css ma asti hamile 4 types of selectors padhethyam, in real, they are many, 
+    these help you to code more efficiently, descendent is one more selector in  css -->
+<html>
+    <head>
+        <title>Descendant selector</title>
+        <style>
+            div p b{
+                /* this way of using selector is descendant, descending order ma cha ni ta, path diyeko jasto */
+                background-color: lightblue;
+            }
+            div, p, i{
+                /* this way of using selector is group selector, bhaye bharko div, p, ra i ma yo css apply huncha*/
+                /* tala ko code overrides mathi ko code, remember this */
+                font-size: 50px;
+                background-color: coral;
+            }
+            div>i{
+                /* this way of using selector is child selector, >  sign means we defined that i is the child of div but since i isn't the 
+                child of div, baru p is the child of div so yo kaam gardaina div>p gare bhaye kaam garthyo,,,,i access garna p>i garnuparyo cause 
+                p is the parent of i*/
+                background-color: yellow;
+            }
+            p>i{
+               /* aba this will work, this is child selector */
+                background-color: yellow;
+            }
+            
+        </style>
+    </head>
+</html>
+<body>
+    <div>
+        <p>
+            <b>This is bold text</b>
+        </p>
+    </div>
+    <div>
+        <p>
+            <i>This is italic text</i>
+        </p>
+    </div>
+   
+    
+</body>

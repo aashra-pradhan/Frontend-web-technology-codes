@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image1</title>
+</head>
+
+<body>
+    <img src="1.jpg" id="i1" alt="">
+    <br>
+    <button onclick="changeImage()">Change Image</button>
+    <script>
+        function changeImage() {
+            var ab = document.getElementById("i1");
+            var ac = ab.src = "3.jpg";
+        }
+    </script>
+    <!-- JavaScript can change HTML attribute values.
+    In this case JavaScript changes the value of the src (source)
+    attribute of an image. -->
+</body>
+
+</html>

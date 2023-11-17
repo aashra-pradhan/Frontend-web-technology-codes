@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>sibling selector</title>
+        <style>
+           
+            div{
+                width: 200px;
+                height: 200px;
+                margin: 20px;
+                border: 5px solid red;
+            }
+            h1 + p{
+                /* the way of using sibling selector, h1 sangai immediately tala aaune euta p tag ma matra properties lagcha */
+                background-color: green;
+            }
+            /* h1~p{ */
+                /* the way of using sibling selector, esma chai h1 sanga tala tala jati pani p cha sab ma properties apply*/
+                /* background-color: green; */
+            /* } */
+        </style>
+    </head>
+</html>
+<body>
+    
+    <div id="one">
+        <h1>Heading 1</h1>
+        <p>This is paragraph</p>
+    </div>
+    <div id="two">
+        <h1>Heading 2</h1>
+        <p>This is paragraph</p>
+        <p>This is paragraph</p>
+    </div>
+    <div id="three">
+        <h1>Heading 3</h1>
+        <p>This is paragraph</p>
+    </div>
+    
+</body>

@@ -1,0 +1,53 @@
+<!-- media query 
+
+hamile asti meta ma viewport=by default rakhyam bhane every screen anusar content aaucha ni,
+ that can be done by using coding as well. this method of displaying web content according to scrreen size(MOBILE, TAB, LAPTOP, even when 
+ stretching the browser to small, large) is called responsive web page, that tool WE USE TO MAKE RESPONSIVE WEB PAGE is MEDIA QUERY. -->
+
+
+ <!--Check sir ko code of -->positions and media query in classroom, also check the outputs for understanding, also an extra mile
+  required by you
+  -->
+
+
+ <!-- VIMP for EXAM as well, What is media query? -->
+ EXAMPLE:
+ @media (max-width: 600px){
+	div.main{
+		background-color: purple;
+		color: white;
+        align: left;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	div.sidebar{
+		display: none;
+	}
+	#logo1{
+		float:left;
+	}
+}
+
+esma, max-width=600 meaning, if a device having max scrreen width 800, tyo case ma div.main ko content lai css deko
+width max 800 cha bhane logo centre ko satta left ma jancha and so on
+only screen rakhyo bhane yo browser ma not applicable, only applicable for devices, so the same webpage can be made 
+look different in browser and devices.
+
+so this is how media query is basically used.
+
+
+TALKING ABOUT SIR KO MEDIA QUERY KO FILES
+What he's done is:-
+
+container ma external css (certain screen size ko lai customize gareko css, eg. phone screen ko lai,,,so suppose bgcolor,
+ size haru different rakhecham yo css ma)
+
+container1 ma ni external css (certain screen size(suppose browser) ko lai customize gareko css)
+
+container 2 ma external css has beeen used ACCORDINGLY, as per screen size, tei anusar
+ we've taken the necessary css file(container ya container1) 
+ 
+So media query can be used in  2 ways. One way as we did in container2 and one way we did in container3.
+
+container 3 ma internal css nai use garera specify gardiyeko cha, media query lai.

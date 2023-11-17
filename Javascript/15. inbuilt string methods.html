@@ -1,0 +1,55 @@
+<!-- there are 3 types of function- string, numeric, date and time -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+
+        
+        var txt="I like an apple.";
+        var txt1=txt.toUpperCase();
+        document.write(txt1);
+        // here we're using txt(variable) as an object and using already in built function that is
+        // toUpperCase
+
+        //JS ma harek function, method, variable ko first letter always small
+        //  ani every following word ko first letter capital 
+        
+
+        var txt="I like an apple.";
+        var txt1=txt.toLowerCase();
+        document.write("<br>"+ txt1);
+        // here txt1 is overridden
+
+        var txt="I like an apple.";
+        var txt1=txt.length;
+        document.write("<br>"+txt1);
+        //returns length of string/array including spaces
+
+        var txt="I like an apple.";
+        var txt1=txt.charAt(4);
+        document.write("<br>"+txt1);
+        //returns 4th index of string(index starts from 0)
+
+        var txt="I like an apple.";
+        var txt1=txt.replace("apple","orange");
+        // txt ko apple lai orange banaidincha(not txt1 ko, be careful)
+        document.write("<br>"+txt1);
+
+        var txt="I like an apple.";
+        var txt1=txt.bold();
+        document.write("<br>"+txt1);
+
+        //check more JS String methods and String Search in W3Schools
+        // substring, string search,  locate
+
+        // check JS in w3schools till JS math sararaa
+    </script>
+</body>
+</html>

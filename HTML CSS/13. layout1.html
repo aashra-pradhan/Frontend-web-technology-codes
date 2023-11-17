@@ -1,0 +1,116 @@
+<!-- exam ma VVIMP cause exam ma layout sodhirahuncha using div, even esko practical usage dherai cha-->
+<!-- in real life, you can see real life examples of websites andf try to recrteate them or even make your own -->
+<html>
+    <head>
+        <title>layout using div</title>
+        <style>
+            #banner
+            {
+                background-color: orange;
+                width: 100%;
+                /* used % in width to make it liquid(stretch garda ni asar nahos bhanera) */
+                height:100px;
+                margin:5px;
+
+            }
+            #nav
+            {
+                background-color: beige;
+                width: 100%;
+                height:30px;
+                margin:2.5px;
+            }
+            #nav ul{
+                /* nav ko ul ko lagi(esari path deko ramro for specific kura haru), ul is a block element, eslai horizontal banauna display inline gareko */
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                /* to remove the listing bullets of ul */
+            }
+            #nav ul li
+            {
+                display: inline;
+            }
+            #nav ul li a{
+                text-decoration: none;
+                /* to remove the underline of links */
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 5px;
+                /* to ,maintain spaces between the options in nav bar */
+                padding: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+                /* hamile esari padding left right and overall milaunupareko to perfecctly adjust the bgcolor pin of anchor tags */
+                /* to maintain good distance from the content to the border */
+                line-height:30px;
+                /* esle centre ma rakhdincha cause hamile navbar ko height pani 30px rakhethyam */
+                background-color: pink;
+                color: red;
+                border: 1px solid sandybrown;
+                border-radius: 5px;
+                
+            }
+            #nav ul li a:hover
+            {
+                background-color: white;
+                color: orange;
+            }
+            #main
+            {
+                background-color: lightgreen;
+                height: 608px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+                margin-right: 308px;
+                /* margin right chai sidebar ko width bhanda ali badhi rakha because esko side ma 
+                sidebar lai atauna*/
+            }
+            .sidebar
+            {
+                height: 300px;
+                width: 300px;
+                background-color: olive;
+                margin: 2.5px;
+                float:right;
+                clear: right; 
+                /* clear right le chai k garcha bhanda, first ma float right huncha ani since div is a 
+                block element, arko div rakhda tyo first div(sidebar) ko right ma aairathyo but we wanted it
+                just below it so, float right bhayepachi clear le tesle khako badhi space clear gardincha right
+                 ma, ani sidebar ajhai rihght ma aaunu satta thyakka tala aaucha*/
+            }
+            #s2
+            {
+                background-color: green;
+                height:302px;
+            }
+            #footer
+            {
+                background-color: darkgrey;
+                height:60px;
+                margin:2px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="banner"></div>
+        <div id="nav">
+        <!-- for navigation bar -->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Insert</a></li>
+                <li><a href="">Help</a></li>
+                <li><a href="">Data</a></li>
+                <li><a href="">About Us</a></li>
+            </ul>
+        </div> 
+        <!-- </div> bhitra rakhne afno j j content rakhne euta div ma-->
+        <div class="sidebar"></div>
+
+        <!-- we're using dui tinta side bar,so class use gare so that we can use the same css fr all -->
+        <div class="sidebar" id="s2"></div>
+        <div id="main"></div>
+        <!-- for main content -->
+        <div id="footer"></div>
+       
+    </body>
+</html>

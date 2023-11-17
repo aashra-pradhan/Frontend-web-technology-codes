@@ -1,0 +1,22 @@
+ 1div(class div1) 
+    5paras(no css for this)
+    1 box(#box)
+
+
+if box=
+1div(class div2)
+    5paras
+    
+    absolute le follow garne chai <non-static> i.e., browser, relative is also non-static 
+        tesaile div1 lai relative rakhyo bhane, relative le static(div1) lai non-static banaidincha, ani the box(absolute) will follow div1
+        if div1 lai kei position rakhenam bhane that's automatically static
+        box lai absolute
+
+        PLEASE do research on this topic, understand all 4 positions.
+    -->
+
+    YOUTUBE HARRY:
+
+    relative--> moves relative to its actual position in which it was initially(normal static(default) position) and leaves a gap in 
+                its prior initial position
+    absolute--> relative to the position of its 1st parent, leaves no gap in its initial position

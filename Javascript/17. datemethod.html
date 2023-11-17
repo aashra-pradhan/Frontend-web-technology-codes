@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <script type="text/javascript">
+        var today = new Date();
+        //this is default consrtructor(cause parameters not passed which creating object; java ma padhethyam ni hai),class Date ko naya object banaune bittikai value return garcha.
+        document.write(today + "<br>");
+        var dt=today.toDateString();
+        // toDateString --> date lai string ma convert garna( to convert into readable form)
+        document.write(dt + "<br>");
+
+        today.getDate();
+        document.write(today + "<br>");
+
+        // check date get methods, date formats in w3, like setdate, setfullyear and so on
+        // eti dherai date methods ra date formats aru programming lang. ma chaina
+
+        today.setDate(10-30);
+        today.setFullYear(2003);
+        today.setMonth(0-10);
+        document.write(today + "<br")
+        //yo set gare anusar aairachaina, random dates aairacha
+    </script>
+</body>
+</html>

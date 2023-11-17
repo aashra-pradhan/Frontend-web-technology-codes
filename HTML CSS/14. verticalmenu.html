@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>
+            Vertical menu
+        </title>
+        <style>
+            ul{
+                list-style: none;
+                margin: 0px;
+                padding: 0px;
+                /* margin, padding 0 px rakheko to remove the natural space that browser gives initially automattically */
+            }
+            ul li a{
+                text-decoration: none;
+                background-color: pink;
+                display: block;
+                /* li is block element, a is inline, eslai ni block banaidium to have even shape of each option in menu(bg color) */
+                width:60px;
+                height: 25px;
+                margin:5px;
+                padding: 10px;
+                text-align: center;
+                /* horizontally centre */
+                line-height: 25px;
+                /* vertically centre */
+                border: 1px solid gold;
+                border-radius: 5px;
+                /* to make the border ali rounded */
+                color: red;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            ul li a:hover
+            {
+                background-color: beige;
+                color: orange;
+                border:1px solid orange;
+            }                
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Insert</a></li>
+            <li><a href="">Format</a></li>
+            <li><a href="">Help</a></li>
+            <li><a href="">Data</a></li>
+        </ul>
+    </body>
+</html>

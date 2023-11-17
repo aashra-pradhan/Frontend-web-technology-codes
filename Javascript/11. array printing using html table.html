@@ -1,0 +1,32 @@
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            // multidimensional array to print name and age of person
+            //this is very useful, while retrieving data from databases to oraganize garera lyauna.
+            var person=[
+                        ["ram",23],
+                        ["sita",15],
+                        ["gita",25],
+                        ["hari",40]
+                    ]; 
+
+            document.write('<table border=1 width=30%>');
+    
+            for(var i=0;i<person.length;i++)
+            {
+                document.write('<tr>');
+                document.write('<td>');
+                document.write(person[i][0]+" "); //for every name (second index 0)
+                document.write('</td>');
+                document.write('<td>');
+                document.write(person[i][1]+" "); //for every age (second index 1)
+                document.write('</td>');
+                document.write('</tr>');
+            }
+            document.write('</table>');
+            document.write("<br><br>" + "Successfully printed Multidimensional array using loop");
+        </script>
+    </body>
+</html>

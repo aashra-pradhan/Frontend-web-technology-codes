@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Descendant selector</title>
+        <style>
+           p:nth-child(even)
+           {
+            background-color: pink;
+           }
+           p:nth-child(odd)
+           {
+            background-color: lightsalmon;
+           }
+           p:nth-child(3)
+           {
+            background-color: yellow;
+           }
+           p:nth-child(7n)
+           {
+            /* 7 ma yo property apply huncha ani 7 ko multiple haru ma apply huncha */
+            background-color: cornflowerblue;
+           }
+           p:nth-child(3n+2)
+           {
+            /* esma pahila 2nd ma property applied ani 2 pachi 3rd, 3rd ko ma apply hucnha, eg., 2 ma apply ani 5, ani 8, ani 11 and so on */
+            background-color: yellow;
+           }
+           /* now, below we've used pseudoselector to change color of links accordingly */
+           a:link{
+            color: red;
+           }
+           a:visited{
+            color: purple;
+           }
+           a:hover{
+            color: black;
+           }
+        </style>
+    </head>
+</html>
+<body>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+    <p>This is paragraph</p>
+
+    <a href="20. media query.txt">Click here</a>
+    
+</body>

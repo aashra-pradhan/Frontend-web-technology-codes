@@ -1,0 +1,130 @@
+<!-- block element and inline element--SIMPLE yet VVVIMP, html ma jati pani tag ki ta block ki ta 
+    inline huncha, esko concept bina we can't maintain the position and we used layouts, we should know
+kun tag chai block element ho, kun chai inline ani kati kati space lincha ti tags le........Eg. <p> le euta 
+    single new line lincha, div le pani new line lincha....so these are block....Inline chai is, teslai jati 
+space chahincha, tyati matra occupy garcha, tyo bhanda badhi gardaina....eg. bold,br, img, button, etc-->
+
+<!-- ki block huncha ki inline huncha, afule chinnuparyo -->
+<!-- this topic VIMP for exam as well -->
+<!-- inline-block is HYBRID -->
+
+<html>
+    <head>
+        <style>
+            h1{
+                background-color: orange;
+            }
+            p{
+                background-color:rgb(90, 90, 185);
+            }
+            div{
+                background-color: pink;
+            }
+
+            #s1{
+                background-color: orange;
+            }
+            #s2{
+                background-color: rgb(179, 87, 179);
+            }
+            #s3{
+                background-color: pink;
+            }
+            #s4{
+                background-color: lightcoral;
+                display: block;
+                /* esari we can make an inline element, block */
+            }
+            h2{
+                background-color: lightseagreen;
+                display:inline; 
+            }
+            h3{
+                background-color: orange;
+                display:inline;
+            }
+            #s5{
+                background-color: lightgreen;
+            }
+            #s6{
+                background-color: rgb(144, 182, 238);
+                height: 50px;
+            }
+            #s7{
+                background-color: rgb(192, 137, 34);
+                height: 50px;
+            }
+            #s8{
+                background-color: rgb(209, 78, 45);
+                height: 50px;
+                display: inline-block;
+            }
+            /* now you can see the difference between s6,s7,s8,,,since span is an inline
+            element, esle afulainchaine jati matra space lincha, so highlight bhayo s6 ra s7 ma,
+            hamile height diye pani, tesle tyo height liyeko chaina because, span is and inline 
+            elemnt, tara s8 lai hamile inline-block banacham, this means inline ra block ko dubai 
+            prtopertieds huncha esma as we wanna shape ie, so s8 ma height assign gareko, TEsle 
+            height liyecha, ani afno inline property pani maintain garecha */
+        </style>
+    </head>
+    <body>
+        <h1>This is a heading</h1>  
+<!-- we can see h1 is taking the whole line(we saw it by keeping bgcolor, so yo block element bhayo, 
+    tesko side ma kei naya elementy halna milena, cause tesle purai line occupy garcha,,,h1 pachi space 
+    ta baaki thyo ni but p
+     tag ta naya line mai start bhayo cause yo block element ho, naya line mai suru huncha, pura line
+      nai lincha, afno margin, border, padding sabai lincha tara div matrai le chai
+	  (among all block tags) left ra right ma matra 
+      lincha(that is, tala mathi gap nai hunna arko div aayeni),
+      margin, border, padding,
+       top bottom ma lidaina) -->
+        <p>This is a paragraph</p>
+        <div>This is div</div>
+        <br>
+        <br>
+        <br>
+        <span id="s1">This is span 1</span>
+        <span id="s2">This is span 2</span>
+        <span id="s3">This is span 3</span>
+        <img src="1.jpg">
+        <!-- span chai is an inline element -->
+        <!-- aba you can see 1st span lai chaheko jati space matra occupy garcha,
+        so 2nd span tyo sakkkine bittikai aairacha, you can also see that the image 
+    in same line aairacha cause img also is inline element-->
+    <br>
+    <br>
+    <img src="1.jpg">
+    <img src="1.jpg">
+    <img src="1.jpg">
+    <img src="1.jpg">
+    <br>
+    <br>
+    <span id="s4">This is span4, jun lai hamile block banako</span>
+    <span id="s5">Another normal inline span</span>
+    <br>
+    <br>
+    <h2>hi</h2>
+    <h3>bye</h3>
+    <br>
+    <br>
+    Music is generally defined as the art of arranging sound to create some combination 
+    of form, harmony, melody, rhythm, or otherwise expressive content.[1][2][3] Definitions
+     of music vary depending on culture,[4] though it is an aspect of all human societies and a 
+     cultural universal.[5]<span id="s6"> While scholars agree that music</span> is defined by a few specific elements,
+      there is no consensus on their precise definitions.[6] The creation of music is commonly divided
+       into musical composition, musical improvisation, and musical performance,[7] though the topic 
+       itself extends into <span id=s7>academic</span> disciplines, criticism, philosophy, and psychology. Music may
+        be performed or improvised using a vast range of instruments, including the human voice.
+In some musical contexts, a performance or composition may be to some extent improvised. For instance,
+ in Hindustani classical<span id="s8">music</span>, the performer plays spontaneously while following a partially defined 
+ structure and using characteristic motifs. In modal jazz, the performers may take turns leading and
+  responding while sharing a changing set of notes. In a free jazz context, there may be no structure
+   whatsoever, with each performer acting at their discretion. Music may be deliberately composed to be
+    unperformable or agglomerated electronically from many performances. Music is played in public and 
+    private areas, highlighted at events such as festivals, rock concerts, and orchestra performances, 
+    and heard incidentally as part of a score or soundtrack to a film, TV show, opera, or video game.
+     Musical playback
+ is the primary function of an MP3 player or CD player and a universal feature of radios and smartphones.
+    
+    </body>
+</html>

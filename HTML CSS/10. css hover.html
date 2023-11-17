@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>CSS demonstration</title>
+        <style>
+            p:hover{
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                color: red;
+            }
+
+            .d1{
+                width: 300px;
+                height: 200px;
+                background-color: red;
+                border: 1vh solid pink;
+            }
+            .d1:hover{
+                width: 300px;
+                height: 200px;
+                background-color: pink;
+                border: 1vh solid red;
+            }
+
+            .d1:nth-child(2){
+                width: 100px;
+                height: 100px;
+                background-color: black;
+            }
+            #d1:hover{
+                width: 300px;
+                height: 200px;
+                border: 50px solid orange;
+            }
+            img{
+                opacity:1;
+            }
+            img:hover{
+                opacity:0.5; 
+                /* so now the image gets lighter when you hover, alsoyou can change the shapeof cursor when you hover, or also use img or ico img to change cursor to the photo, eg error ma cross jasto */ 
+            }
+        </style>
+    </head>
+    <body>
+        <p>This is a paragraph</p>
+        <div class="d1"></div>
+        <div class="d1"></div>
+    <img src="1.jpg">
+    </body>
+</html>

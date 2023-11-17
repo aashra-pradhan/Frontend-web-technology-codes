@@ -1,0 +1,6 @@
+css tables-very dynamic, versative, html bata we couldn't alter the properties.
+
+border-collapse--> cell ko borders hatcha
+width, height of <td> <th>
+
+check w3schools

@@ -1,0 +1,43 @@
+<!-- Three types of events in JS:
+1. Mouse event(hover, click(WE'VE ALREADY USED ONCLICK), scroll)
+2. Keyboard event(enter, up/down arrow, ctrl, any key ma event create garna sakcham)
+3. Windows event(jaba prog load huncha,
+   new tab ma display garne ho ki, windows close garne ho ki, etc.) -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paragraph1</title>
+</head>
+
+<body>
+    <p onmouseover="changeColor()" onmouseout="returnBack()" id="p1">This is paragraph1</p>
+
+    <img src="4.jpg" onmouseover="changeImage()" onmouseout="firstImage()" id="i1" alt="">
+    <script>
+        function changeColor() {
+            var t1 = document.getElementById("p1");
+            var t2 = t1.style.color = "blue";
+            var t3 = t1.style.backgroundColor = "coral"
+        }
+        function returnBack() {
+            var t1 = document.getElementById("p1");
+            var t2 = t1.style.color = "black";
+            var t3 = t1.style.backgroundColor = "white"
+        }
+        function changeImage() {
+            var t1 = document.getElementById("i1");
+            var t2 = t1.src = "6.jpg";
+        }
+        function firstImage() {
+            var t1 = document.getElementById("i1");
+            var t2 = t1.src = "4.jpg";
+        }
+    </script>
+</body>
+
+</html>

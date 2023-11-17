@@ -1,0 +1,43 @@
+<!-- objects ko concept is VVVIMP in Js and its frameworks -->
+<!-- evth that comes after . is object(eg.document.write()) or property(eg.document.cookie) eg.:window.alert, windw.prompt,,,esma alert, prompt are objects-->
+<!-- An object has properties, all vehicles have similar properties, weight, height,
+speeding capacity, so repeatedly chuttai chuuttai variables banaunu ko satta(for diff vehicles), WE CAN
+ CREATE AN OBJECT,
+AND USE THE SAME PROPERTIES EVERYWHERE, BUT JUS DIFFERENT values of the properties 
+ for the same typeof things....This is the main use of OOPS-->
+<!-- eg.of objects; person, vehicle, fruit,,,,all of theseindividually have same properties....all persons 
+have name, address, home, age, etc. all fruits have color, taste, smell, etc. So this is the concept of OOPS. -->
+
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script> 
+           var person = { //yaha euta sano syntax error le ni kei output naaira hucnha so be v v careful, even comma, semicolon,etc. kaile kai ta spaces le ni
+            color: "dark", //don't miss " " in string
+            weight: 90, //yaha spaces kaha kaha rakheko le ni output naauna sakcha so careful
+            height: 5,
+
+            //object method
+            move:function(){
+                document.write("I can move");
+            }
+           }; //be careful with syntax of objects,arrays,loops,variables
+           
+           document.write(person.weight);
+           document.write("<br>");
+           var a = person.weight + 10;
+           document.write(a);
+           document.write("<br>");
+           person.weight2=600;
+           //ekchoti object define garesi jata ni naya object banayera value rakhna milyo, even object destroy garna milyo 
+           document.write(person.weight2);
+           document.write("<br>");
+           delete person.weight2;
+           document.write(person.weight2); //aba undefined bhanera aaucha cause we destroyed weight2 bhanne object
+           document.write("<br>");
+           person.move(); //calling object method
+       </script>
+    </body>
+</html>
