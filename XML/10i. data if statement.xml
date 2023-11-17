@@ -1,0 +1,24 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<?xml-stylesheet type="text/xsl" href="style5.xsl" ?>
+
+<personInfo>
+    <user id="1">
+    <!-- attributes sabai double quotes ma,numeric bhaye ni-->
+        <fname>Ram</fname>
+        <lname>Thapa</lname>
+        <age>56</age>
+    </user>
+
+    <user id="2">
+        <fname>Hari</fname>
+        <lname>Magar</lname>
+        <age>25</age>
+    </user>
+
+    <user id="3">
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <age>34</age>
+    </user>
+</personInfo> 

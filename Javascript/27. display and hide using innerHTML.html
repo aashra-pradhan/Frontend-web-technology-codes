@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function myFunction() {
+            // imp kura garna agadi confirmation rakheko ramro
+            var c1 = window.confirm("Do you really want to add paragraph?");
+            //eta window nalekhe ni chalcha,window is object,confirm is method
+            //similarly document.write ko satta write matra lekhe ni chalcha
+            if (c1 == true) {
+
+
+                var txt1 = document.getElementById("p1");
+                var txt2 = document.getElementById("p2");
+                var txt3 = document.getElementById("p3");
+                txt3.innerHTML = txt1.innerHTML + txt2.innerHTML; //p3 ma ni p1 ra p2 kai content lyayeko
+                txt1.innerHTML = ""; //add garepachi content hatauna,innerHTML use garna
+                //khojne ho sakbar,that is regarded good,innerHTML le new textdisplay garna milcha, esari content hide garna milch, even existing content lai lyayera dekhauna milcha(yaha mathi txt1.innerHTML gare jasari)
+                txt2.innerHTML = "";
+
+                var b1 = document.getElementById("btn");
+                b1.style.visibility = "hidden"; //button nai hataidina
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1">This is first paragraph</p>
+    <p id="p2">This is 2nd paragraph</p>
+    <p id="p3"></p>
+    <button id="btn" onclick="myFunction()">Click me</button>
+</body>
+
+</html>

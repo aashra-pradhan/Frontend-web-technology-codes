@@ -1,0 +1,90 @@
+<!-- using jquery -->
+
+<!-- Explore more and more in W3schools,for fadein, fadeout,toggle evth,slide up/down,
+animate,transitions,you can even manage the speed of sliding down/up, slow bhanne keyword
+ rakhera or value diyers(that value is in miliseconds(can be used in nav menus) -->
+ 
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using jquery</title>
+    <style>
+        div {
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            margin: 5px;
+            background-color: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="one">
+        <h1>This is heading</h1>
+        <p>This paragraph one</p>
+    </div>
+    <div id="two">
+        <h1>This is heading</h1>
+        <p>This paragraph two</p>
+    </div>
+    <div id="three">
+        <h1>This is heading</h1>
+        <p>This paragraph three</p>
+    </div>
+    <button id="btn1">Hide last box</button>
+    <button id="btn2">Hide all paragraphs</button>
+    <button id="btn3">Hide content with the word "one"</button>
+    <button id="btn4">Hide first div</button>
+    <button id="btn5">Hide last div</button>
+    <button id="btn7">Hide second div</button>
+    <button id="btn6">Hide evth</button>
+    <button id="btn8">Show evth</button>
+    
+    <script src="jquery/jquery.js"></script>
+    <script>
+        //euta arko js file ni banaunuparyo to use jquery, below jquery wala file
+        //jati pani jquery code cha,tyo sabai ready bhanne function bhitra huncha, so sabai code esbhitrai lekhne, WE USE $ to use jquery ko functions
+        $(document).ready(function () {  //this is the way of writing function in jquery
+            $("#btn1").click(function () {
+                $("#three").hide(); //hide,click is a function of jquery,jquery ma siddhai select garna milcha id/classes, and these are called selectors, like in css,no need to do getelementbyid haru, normal js ma yo kaam garna, target garera garda long code huncha
+            });
+
+            $("#btn2").click(function () {
+                $("div p").hide(); //div bhitra ko p lai select gareko, hiding all paragraphs
+            });
+
+            $("#btn3").click(function () {
+                $("div p:contains(one)").hide(); //one NOT in inverted commas
+            });
+
+            $("#btn4").click(function () {
+                $("div:first").hide(); //to hide first div
+            });
+
+            $("#btn5").click(function () {
+                $("div:last").hide(); //to hide last div
+            });
+
+            $("#btn7").click(function () {
+                $("div:nth-child(2)").hide(); //to hide 2nd child of div(index goes like 1,2,3...), can use nth-child(even) esari as well
+            });
+
+            $("#btn6").click(function () {
+                $("div").hide(); //to hide evth
+            });
+        });
+
+        $(document).ready(function () { //show garna arkai ready function ma garne aba
+            $("#btn8").click(function () {
+                $("div").show();//to show all divs
+            });
+        });
+    </script>
+</body>
+
+</html>

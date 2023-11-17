@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function myFunction() {
+            class car {
+                constructor(name, color, miles) {
+                    this.name = name;
+                    this.color = color;
+                    this.miles = miles;
+                }
+            }
+        
+        var car1 = new car("tata", "blue", 300);
+        var car2 = new car("toyota", "red", 800);
+        var txt = document.getElementById("p1"); //esari ni innerHTML use garna milcha
+        txt.innerHTML=car1.name;
+        }
+        //innerHTML chai is used to place text inside a particular html element or hide its content,tara
+        //document.write le chai siddhai browser ma lekhne ho,
+        //so you don't need to target a particular element, id or anything to print using document.write
+        //but since innerHTML le kunai html ma existing tag/id testo bhitra content rakhdine/hide gardine bhayekole,you have to target
+        //it before using innerHTML
+    </script>
+
+    <p id="p1"></p>
+    <button id="btn" onclick="myFunction()">Click me</button>
+</body>
+
+</html>

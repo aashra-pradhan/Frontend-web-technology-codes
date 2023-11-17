@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding="utf-8"?>
+ <?xml-stylesheet type="text/xsl" href="style2.xsl" ?> 
+
+
+<!-- CSS ko j kaam ho, tei kaamko XSLT in XML.
+STored data lai display garna we use XSLT,it is a stylesheet. Its extension is xsl.
+We can have desired output(display) using loops, if statements , and others in XSLT.
+This is ali complex. -->
+
+<personInfo>
+    <user id="1">
+    <!-- attributes sabai double quotes ma,numeric bhaye ni-->
+        <fname>Ram</fname>
+        <lname>Thapa</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user id="2">
+        <fname>Hari</fname>
+        <lname>Magar</lname>
+        <address>Lalitpur</address>
+    </user>
+
+    <user id="3">
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <address>Kathmandu</address>
+    </user>
+</personInfo> 

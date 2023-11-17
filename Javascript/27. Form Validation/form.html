@@ -1,0 +1,41 @@
+<!-- this is sure ques in exam; both pract theo -->
+<!-- CLIENT SIDE FORM VALIDATION -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="valid.js"></script>
+</head>
+
+<body>
+    <form id="form" method="post" action="Welcome.html" onsubmit="return formValidation()">
+        <!-- return because return false bhayo bhane etai return garauna instead of foing in the page -->
+        <div class="row">
+            <label for="uname">Username:</label>
+            <input type="text" id="uname">
+        </div>
+        <br>
+        <div class="row">
+            <label for="uadd">Useraddress:</label>
+            <input type="text" id="uadd">
+        </div>
+        <br>
+        <div class="row">
+            <label for="uem">Department:</label>
+            <input type="text" id="uem">
+        </div>
+        <br>
+        <div class="row">
+            <label for="upass">New Password:</label>
+            <input type="text" id="upass">
+        </div>
+        <br>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!-- namespace is usedto avoid element name conflicts, cause there are somany developers across the world -->
+
+<?xml version = "1.0" encoding="utf-8"?>
+
+<personInfo>
+    <user xmlns:a="https://classroom.google.com/aashra">
+    <!-- yaha jun url rakhda ni ok, afnai website ko lagi xml lekhne bhaye,tei page ko url rakhne  -->
+    <!-- xmlns is inbuilt attribute, here 'a' is prefix, j pani rakhna milcha prefix ma-->
+        <a:fname>Ram</a:fname>
+        <a:lname>Thapa</a:lname>
+        <a:address>Kathmandu</a:address>
+    </user>
+
+    <user>
+        <fname>Hari</fname>
+        <lname>Magar</lname>
+        <address>Lalitpur</address>
+    </user>
+
+    <user>
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user>
+        <fname>Lakhan</fname>
+        <lname>Thapa</lname>
+        <address>Bhaktapur</address>
+    </user>
+</personInfo> 

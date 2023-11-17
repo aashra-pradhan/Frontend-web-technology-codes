@@ -1,0 +1,49 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<!-- exam ma sodhirahuncha how to send dta using dtd -->
+<!-- yo chai dtd ko lagi (doctype..., j jati dtd sabai doctype[] bhitrai rakhcham,personInfo is root -->
+<!DOCTYPE personInfo [
+<!ELEMENT personInfo(name, address,age?,(landline|mobile) , entities)>
+<!-- this means hami name,address ra phone matra pathauna lage -->
+<!-- age? means age pathaunu is optional,pathaye ni ok  napathaye ni ok, but name and address
+ compulsorily pathaunuparcha -->
+ <!-- (landline|mobile) means landline pathaye ni bhayo mobile pathaye ni bhayo -->
+ <!-- hamile <!ELEMENT personInfo ANY> lekhyam bhane any data lai pathauna milyo,
+ kei napatha ni bhayo, sab kolagi valid -->
+  <!-- hamile <!ELEMENT personInfo (name+ address)> lekhcham if we want to send more that one name under personInfo,natra invalid -->
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT landline (#PCDATA)>
+<!ELEMENT mobile (#PCDATA)>
+<!ELEMENT entities (#PCDATA)>
+<!-- this means name,address,phone lai parseable ho bhaneko -->
+<!-- espachi we have to check if data is valid ornot(tala name address phone -->
+<!-- is defined or not),tesko lagi notepad++ ma built-in plugin huncha, to validate data that's  -->
+<!-- why we did dtd ko code in notepad++, every nowand then validate garirakhnuparha -->
+<!ATTLIST name id CDATA "1234">
+<!-- ATLIST chai attribute pathauna -->
+<!-- YO CHAI name ko id attribute=1234 bhayeko element -->
+ <!-- lai CDATA(non parseable banako),esle by default name ko id 1234 set gardincha,tala narakhe ni,ya tala diff value for id rakhe ni esle 1234 nai regard garcha -->
+ 
+ <!-- <!ATTLIST name id CDATA #REQUIRED>, this means talanam lai id rakhnai parha and that is non-parseable tho -->
+ <!-- <!ATTLIST name id CDATA #IMPLIED> ,this means id rakhe ni bhayo id narakheni bhayo(optional) -->
+ 
+ <!-- <!ATTLIST name id CDATA #FIXED "1234"> , eskomatlab yei 1234 id pathaunuparcha,tala <name> ma pani -->
+ <!ENTITY code "12">
+ <!ENTITY gender "male">
+ <!ENTITY sender "Hari">
+]>
+
+<personInfo>
+        <name id="1234">Ram Thapa</name>
+        <address>Kathmandu</address>
+		<age>45</age>
+		<landline>014273648</landline>
+		<mobile>9857494980</mobile>
+		
+		<!-- entities,extra k k data pathauna khojirachu -->
+		<!-- <entities>ko satta aru j lekhda ni ok , tara mathi chai !ENTITY nai huncha-->
+		<entities>&code;&gender;&sender;</entities>
+		
+</personInfo>

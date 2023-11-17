@@ -1,0 +1,77 @@
+<!-- adding css using js (altering css content using js) -->
+<!-- adding attributes is basically adding css -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>add atrtributes</title>
+
+    <style>
+        #sty {
+            /* hamile euta css create garirako with id "sty", ani eslai hami
+         euta element ma add garcham using js */
+            color: red;
+            background-color: pink;
+        }
+
+        /*esari aba external css file banayera js le whole body ko theme nai change garna sakcham*/
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <h1>This is heading</h1>
+        <p id="p1">This is para1 </p>
+        <p id="p2">This is para2 </p>
+    </div>
+    <button onclick="addElement()">Click to add element (h1 and p)</button>
+    <button onclick="removeElement()">Click to remove element (h1 and p)</button>
+    <button onclick="addAttribute()">Click to add attribute(css properties)</button>
+
+    <script>
+        // element add garhna euta parent
+        // element chahincha, tesaile hamile mathi div haldeko, h1 and p are childs of div
+        function addElement() {
+            var main = document.getElementById("main"); //parent lai taget garyam
+
+            //appending heading
+            var ele2 = document.createElement("h1");
+            main.appendChild(ele2);
+            var text2 = document.createTextNode("New heading");
+            ele2.appendChild(text2);
+
+            //appending paragraph
+            var ele = document.createElement("p"); //euta naya element banako
+            main.appendChild(ele); //aba parent ma tyo naya child append garyam
+            var text = document.createTextNode("This is new paragraph"); //euta variable ma kei text halyam, esari any content halna milcha
+            ele.appendChild(text);//tyo text lai hamro new child ma haldeko
+        }
+
+        //to remove element; esari form table div sabai hatauna milyo, add ni garna milyo
+        function removeElement() {
+            var main = document.getElementById("main"); //parent lai taget garyam
+            //for h1
+            var head = document.getElementsByTagName("h1")[1];
+            //[1] is index of element which we wanna delete
+            //ADDELEMENT garesi jun naya heading aaaucha that is 2nd heading, sotesko index is 1 , teslai hataune ho ni ta
+            //aba parent lai access garera element remove garcham
+            var parentvar = head.parentNode; //parentNode is keyword hai
+            parentvar.removeChild(head);
+
+            //for p
+            var para = document.getElementsByTagName("p")[2];
+            var parentvar = para.parentNode;
+            parentvar.removeChild(para);
+        }
+
+        function addAttribute() {
+            var attri = document.createAttribute("id"); //id ko base garera css change garna lageko, class/tag ko ni change garna milyio
+            attri.value = "sty";
+            var para = document.getElementsByTagName("p")[0];//targetting first para
+            para.setAttributeNode(attri)
+        }
+    </script>
+</body>
+
+</html>

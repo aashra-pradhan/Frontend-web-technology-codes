@@ -1,0 +1,7 @@
+<?xml version ="1.0" ?>
+<firstname
+	xmlns:i="http://www.w3.org/2001/XMLSchema-instance"
+	i:schemaLocation="14. data_schema.xsd"> 
+    <!--tyo link chai tei lekhnuparcha, esle chai data schema.xsd lai link gareko -->
+	Ram
+</firstname>

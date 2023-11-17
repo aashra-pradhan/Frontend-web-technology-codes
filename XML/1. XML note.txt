@@ -1,0 +1,22 @@
+XML:- (exam ma esbata dherai ques aaira huncha)
+
+Like html, it is a markup lang.
+It is mainly used to store and transport data(parse the data). 
+Html chai is mainly used to display the data, data lai user samma data pugaune.
+HTML ma j lekhe ni user lai dekhaidincha, but XML ko data is GENERALLY NOT shown to users,(can be shown to user if wanted, with the helpof html tags) it is stored in the browser and this data is parseable(transportable), eg. browseruser ko name,location,testo chij haru...
+XML is like HTML nai but esma inbuilt library ma kunai pani tag hunna, afaile define garne ho tag, can give whichever name you like, that's why it is called self-descriptive.
+eg.<person></person>,an element bhitra we can create our own attributes as well like id,gender, (yo ID eta selector haina hai(like it was in html),it's just an attribute, property of the element) etc.
+
+
+Why use XML?
+-V Essential for all software developers(simple website banauda kheri tyati banaindaina,tarause gare ramro)
+-specially used to distribute data unknowingly(user lai tha nahune gari,background ma)
+-esle webpage ma testo kei asar dekhaudaina,(XML does not do ANYTHING, XML is just information wrapped in tags) 
+but it is always better to have its knowledge as a developer
+
+
+In html, root element is html tag, similarly there must be 1 root element in XML(can be any name) ani tesko jati pani subchild banauna milcha
+
+XML stands for extensible,eslai hami jati pani extend garna sakcham,naya naya data halera
+
+XML Tree structure is just like DOM.

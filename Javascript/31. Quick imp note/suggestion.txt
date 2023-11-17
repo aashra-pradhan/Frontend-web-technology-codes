@@ -1,0 +1,10 @@
+We Downloaded jquery,uncompressed,development version from website ani tei lai 
+script ma rakhne to use jquery. Jquery is basically a JS file with all the JS functions.
+
+Also,sir suggested to fully learn React, Angular, we can do it now, as 
+we've successfully learnt basic JS.
+
+Node js is all manipulating database, he recommended learning it after studying php 
+as you'll have knowledge of server,but all up to you,it's your wish, there's no hard
+and fast rule for anything, what suits you or whatyou feel is right for you,
+is best for you!!

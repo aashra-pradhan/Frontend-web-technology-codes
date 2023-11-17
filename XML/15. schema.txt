@@ -1,0 +1,40 @@
+ schema is like ddt but schema is more powerful than ddt, 
+ddt le xmldocument ko structurematra check garcha bhane, schema checks evth,values,
+ datatype,etc. DDT cannot check datatype, values,,,DDT every page lai arkai
+  chahincha but we can use the same schema for 
+ multiple xml documents
+
+ simple element is such an element in which just (root) element cha, 
+ tesbhitra text cha, aru nothing, aru kei ni chaina 
+
+complex elements chai esto elements which
+ i. which are empty
+ ii. which have attribute(attribute aaune bittikai complex element ho)
+ (eslai text-only complex elements bhanincha)
+ iii. which only have other elements within it(eslai elements-only complex elements bhanincha)
+ iv. elements that contain both other elements and text
+
+we treat simple and complex elements differently 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

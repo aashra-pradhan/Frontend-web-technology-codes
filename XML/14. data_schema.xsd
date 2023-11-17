@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:element name="firstname" type="xsd:string" />
+    <!-- hamile schema bata basically <firstname> element lai check garna khojeko, firstname aaunuparyo bhanna khojeko ho
+    xsd is namespace, schema bhanne element jasto khole ho, type string bhanesi
+     string input matra lina milcjha re firstname ma,schema will check-->
+
+     <!-- so this was for simple element, ie first name -->
+
+     <!-- mind that you do schema ko code also in notepad++ so that you can validate using plugin-->
+
+    <!-- practical exam ma xml didaina, theory lai code lekhna jannuparcha  -->
+</xsd:schema>

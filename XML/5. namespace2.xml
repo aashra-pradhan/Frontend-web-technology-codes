@@ -1,0 +1,31 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<personInfo xmlns:a="https://classroom.google.com/aashra" xmlns:b="https://classroom.google.com/aashra">
+<!-- esari mathi root mai define gardiyo bhane tala feri feri define garnuparena -->
+<!-- duitai ma same uri rakhda ni huncha -->
+<!-- w3schools ma example check garnu, also URI ko barema ali hera, why we have to write URI -->
+<!-- sab ma namespace rakheko ramro to avoid name conflicts -->
+    <user>
+        <a:fname>Ram</a:fname>
+        <a:lname>Thapa</a:lname>
+        <a:address>Kathmandu</a:address>
+    </user>
+
+    <user>
+        <b:fname>Hari</b:fname>
+        <b:lname>Magar</b:lname>
+        <b:address>Lalitpur</b:address>
+    </user>
+
+    <user>
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user>
+        <fname>Lakhan</fname>
+        <lname>Thapa</lname>
+        <address>Bhaktapur</address>
+    </user>
+</personInfo> 

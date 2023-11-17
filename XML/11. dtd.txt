@@ -1,0 +1,12 @@
+<!-- hamile pathairako data is checked by dtd if it has all legal elements and attributes
+ of an XML document, sender lai data parse garda, sender lai chahiyeko jasto pathairaheka
+  cham ki nai bhanera check garcha -->
+
+  <!-- Entities mahami additionalvalues rakherapathauna sakcham xlma eg.authorname -->
+
+  <!-- PCDATA is parseable data -->
+  <!-- CDATA is non-parseable data -->
+
+  <!-- XSLT DDT Schema dherai sodhhirahuncha -->
+
+  Yo code Notepad++ ma garnu ddt ko(garechu)

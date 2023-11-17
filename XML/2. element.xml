@@ -1,0 +1,29 @@
+<!-- yo lekhnai parcha hai -->
+<?xml version = "1.0" encoding="utf-8"?>
+
+<!-- root element is personInfo, XML is very CASE SENSITIVE-->
+<personInfo>
+    <user>
+        <fname>Ram</fname>
+        <lname>Thapa</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user>
+        <fname>Hari</fname>
+        <lname>Magar</lname>
+        <address>Lalitpur</address>
+    </user>
+
+    <user>
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user>
+        <fname>Lakhan</fname>
+        <lname>Thapa</lname>
+        <address>Bhaktapur</address>
+    </user>
+</personInfo> 

@@ -1,0 +1,27 @@
+<?xml version = "1.0" encoding="utf-8"?>
+
+<personInfo>
+    <user post="admin">
+        <fname>Ram</fname>
+        <lname>Thapa</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user post="accountant">
+        <fname>Hari</fname>
+        <lname>Magar</lname>
+        <address>Lalitpur</address>
+    </user>
+
+    <user post="operator">
+        <fname>Raju</fname>
+        <lname>Singh</lname>
+        <address>Kathmandu</address>
+    </user>
+
+    <user post="journalist">
+        <fname>Lakhan</fname>
+        <lname>Thapa</lname>
+        <address>Bhaktapur</address>
+    </user>
+</personInfo> 

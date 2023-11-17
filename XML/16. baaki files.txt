@@ -1,0 +1,25 @@
+data.xml
+dataschema.xsd
+
+datatype.xml     //firstname bhanne element ma string nai aaunuparcha, type="xsd:string" esari define garesi
+dataschematype.xsd
+
+attribute.xml
+attribute.xsd
+
+complexelement.xml
+complexelement.xsd
+
+complexelementtext.xml //esma we defined sequence, xsd filema j schema define garecham, xmldocument ma tei sequence ma elements aaunuparcha
+complexelementtext.xsd
+
+complex element all.xml 
+complex element all.xsd //esma mixed=true because it is complex element with both text and other elements(so mixed)
+//ani xsd:allmeans sab element pathaunuparcha, but no need to be in sequence
+
+complexelementchoice.xml
+complexelementchoice.xsd
+//xsd:choice ma any 1 pathaune among defined ones
+
+complexelementoccur.xml
+complexelementoccur.xsd //esma max occur min occur huncha

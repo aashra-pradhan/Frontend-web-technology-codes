@@ -1,0 +1,61 @@
+Exam ma schema bata what is schema, give example in case of simple/complexelemennt bhanna sakcha
+tara directly code chai sodhdaina(Refer past papers)
+
+exam kolagi note reference chahiye goto javatpoint, extremely understandable good language notes(xml ko mainly check)
+XQuery of defn, FLOWR concept ra dui tin ota examples herera janu(w3schools)
+
+So basically, XQuery is chai,database ma dherai data huncha,and if we want only some required data, then we use xqueryto retrieve that, Eg., if i only want 
+the first name of students who scored more than 90%,i would have to use xquery to retrieve that.
+
+Esko FLOWR concept checkin w3schools and some examples to understand
+
+Yo xquery ko code practically garna milena cause it involves server as well and we haven't learnt that.
+
+Some more valuable NOTE:
+XQuery is the language for querying XML data
+XQuery for XML is like SQL for databases
+XQuery is built on XPath expressions
+XQuery is supported by all major databases
+XQuery is a W3C Recommendation
+
+XQuery is a language for finding and extracting elements and attributes from XML documents.
+
+Here is an example of what XQuery could solve:
+
+"Select all CD records with a price less than $10 from the CD collection stored in cd_catalog.xml"
+
+FLWOR (pronounced "flower") is an acronym for "For, Let, Where, Order by, Return".
+
+For - selects a sequence of nodes
+Let - binds a sequence to a variable
+Where - filters the nodes
+Order by - sorts the nodes
+Return - what to return (gets evaluated once for every node)
+
+doc("books.xml")/bookstore/book[price>30]/title
+The expression above will select all the title elements under the book elements that are under the bookstore element that have a price element with a value that is higher than 30.
+
+The following FLWOR expression will select exactly the same as the path expression above:
+
+for $x in doc("books.xml")/bookstore/book
+where $x/price>30
+return $x/title
+
+With FLWOR you can sort the result:
+
+for $x in doc("books.xml")/bookstore/book
+where $x/price>30
+order by $x/title
+return $x/title
+The for clause selects all book elements under the bookstore element into a variable called $x.
+
+The where clause selects only book elements with a price element with a value greater than 30.
+
+The order by clause defines the sort-order. Will be sort by the title element.
+
+The return clause specifies what should be returned. Here it returns the title elements.
+
+The result of the XQuery expression above will be:
+
+<title lang="en">Learning XML</title>
+<title lang="en">XQuery Kick Start</title>
