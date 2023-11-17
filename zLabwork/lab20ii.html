@@ -1,0 +1,76 @@
+<!-- 20 B. The navigation bar (horizontal menu) consists the items File, Home, Insert, Layout, Design, 
+    View and Help.
+ Using CSS properties, present the menu in attractively and effectively as much as possible. The text color
+  and background color must be changed when hover it. Link with each pages while navigating. -->
+
+ 
+<html>
+    <head>
+        <title>layout using div</title>
+        <style>
+           
+            #nav
+            {
+                background-color: beige;
+                width: 100%;
+                height:30px;
+                margin:2.5px;
+            }
+            #nav ul{
+                /* nav ko ul ko lagi(esari path deko ramro for specific kura haru), ul is a block element, eslai horizontal banauna display inline gareko */
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+                /* to remove the listing bullets of ul */
+            }
+            #nav ul li
+            {
+                display: inline;
+            }
+            #nav ul li a{
+                text-decoration: none;
+                /* to remove the underline of links */
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                margin: 5px;
+                /* to ,maintain spaces between the options in nav bar */
+                padding: 6px;
+                padding-left: 10px;
+                padding-right: 10px;
+                /* hamile esari padding left right and overall milaunupareko to perfecctly adjust the bgcolor pin of anchor tags */
+                /* to maintain good distance from the content to the border */
+                line-height:30px;
+                /* esle centre ma rakhdincha cause hamile navbar ko height pani 30px rakhethyam */
+                background-color: pink;
+                color: red;
+                border: 1px solid sandybrown;
+                border-radius: 5px;
+                
+            }
+            #nav ul li a:hover
+            {
+                background-color: white;
+                color: orange;
+            }
+           
+           
+           
+        </style>
+    </head>
+    <body>
+        
+        <div id="nav">
+        <!-- for navigation bar -->
+            <ul>
+                <li><a href="f.html">File</a></li>
+                <li><a href="h.html">Home</a></li>
+                <li><a href="">Insert</a></li>
+                <li><a href="">Layout</a></li>
+                <li><a href="">Design</a></li>
+                <li><a href="">View</a></li>
+                <li><a href="">Help</a></li>
+                
+            </ul>
+        </div> 
+       
+    </body>
+</html>

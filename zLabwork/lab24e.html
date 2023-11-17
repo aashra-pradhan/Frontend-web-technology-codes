@@ -1,0 +1,35 @@
+<!-- 24e. e. 	Write a program to ask to input length and breadth of rectangle and find the area and perimeter. -->
+
+<html>
+    <head>
+        <title>lab24e</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter length :");
+            l=parseInt(a);
+            var c=window.prompt("Enter breadth :");
+            b=parseInt(c);
+            // l ra b lai global variable banako to access in every function
+        }
+
+
+        function area(){
+            var a=l*b;
+            document.write("The area of rectangle is =" + a + "<br>");
+        }
+
+        function perimeter(){
+            var p=2*(l+b);
+            document.write("The perimeter of rectangle is =" + p + "<br>");
+        }
+
+        input();
+        area();
+        perimeter();
+
+    </script>
+</body>
+</html>

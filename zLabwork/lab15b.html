@@ -1,0 +1,56 @@
+15b. Create a form to input details of newly admitted students for collecting records. 
+The form consists of Students Rol no, Name, Address. Use ‘radio button’ for gender and ‘date’ to input DOB of students.
+ Use ‘select and option’ for choosing means of transport from different options they prefer. Create the text area for fill up
+  some details of students. And also design the Save, Cancel and Reset buttons. 
+
+<html>
+<head>
+	<title>Simple Form</title>
+</head>
+<body>
+<br>
+<br>
+<br>
+<form>
+	<label for=name>Name:</label>
+	<input type=text name="name">
+	<br>
+	<br>
+
+	<label for=address>Address:</label>
+	<input type=text name=address value=Kathmandu>
+	<br>
+	<br>
+	<label for=usergender>Gender:</label>
+	<input type=radio name=usergender>Male
+	<input type=radio name=usergender>Female
+	<input type=radio name=usergender>Other
+	<br>
+	<br>
+	<label for=rol>Roll no.:</label>
+	<input type=text name="rol">
+	<br>
+	<br>
+	<br>
+	<label for=dt>DOB:</label>
+	<input type=date name=dt>
+
+<br>
+<br>
+
+<label for=tp>Transport:</label>
+	<input type=checkbox name=tp>Walk
+	<input type=checkbox name=tp>Cycle
+	<input type=checkbox name=tp>Bus
+	<br>
+	<br>
+<input type=submit value=Save>
+<input type=submit value=Cancel>
+<input type=reset value=Reset>
+
+
+	
+	
+</form>
+</body>
+</html>

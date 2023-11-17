@@ -1,0 +1,32 @@
+<!-- Lab 24b. 	Write a program to input any five numbers and find average of that numbers. -->
+
+<html>
+    <head>
+        <title>lab24b</title>
+    </head>
+<body>
+    <script>
+
+        function avg(){
+            var a=window.prompt("Enter 1st number:");
+            var b=parseInt(a);
+            var c=window.prompt("Enter 2nd number:");
+            var d=parseInt(c);
+            var e=window.prompt("Enter 3rd number:");
+            var f=parseInt(e);
+            var g=window.prompt("Enter 4th number:");
+            var h=parseInt(g);
+            var i=window.prompt("Enter 5th number:");
+            var j=parseInt(i);
+
+            var av=(b+d+f+h+j)/5;
+
+            return av;
+        }
+
+        var ans=avg();
+        document.write("The average is=" + ans);
+
+    </script>
+</body>
+</html>

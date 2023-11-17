@@ -1,0 +1,39 @@
+<!-- 24d. 	Write a program to input any two number and find cube and cube root of a that number. -->
+
+<html>
+    <head>
+        <title>lab24d</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter 1st number:");
+            b=parseInt(a);
+            var c=window.prompt("Enter 2nd number:");
+            d=parseInt(c);
+            // b ra d lai global variable banako to access in every function
+        }
+
+
+        function cube(){
+            e=b*b*b;
+            f=d*d*d;
+            document.write("The cube of first number is =" + e + "<br>");
+            document.write("The cube of second number is =" + f + "<br>");
+        }
+
+        function cuberoot(){
+            e=b*(1/3);
+            f=d*(1/3);
+            document.write("The cuberoot of first number is =" + e + "<br>");
+            document.write("The cuberoot of second number is =" + f + "<br>");
+        }
+
+        input();
+        cube();
+        cuberoot();
+
+    </script>
+</body>
+</html>

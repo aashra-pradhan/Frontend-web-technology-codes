@@ -1,0 +1,69 @@
+<!-- Lab 21
+
+A. Design the button for your web page using div element. Use the CSS properties to present it more 
+attractive
+ as much as possible.
+
+B. Create a box sized 600px by 400px using div element. Change the properties such as border,
+ gradient, shade
+ etc.
+
+C. Type a text “COMPUTER SCIENCE”. Format the text using CSS properties such as text-decoration, 
+weight, shade 
+etc. so that it can be used in banner for your web page. -->
+
+<html>
+    <head>
+        <title>lab 21</title>
+        <style>
+            /* for 21A */
+           #d1{
+                height: 50px;
+                width: 80px;
+                background-color: pink;
+                color:red;
+                border: 2px solid red;
+            }
+            a{
+                text-decoration: none;
+                color: red;
+                line-height: 50px;
+                padding-left: 2px;
+                font-size: 20px;
+            }
+            #d1:hover{
+                color: white;
+                background-color: wheat;
+            }
+            /* for 21B */
+            #d2{
+                height: 600px;
+                width: 400px;
+                border: 5px dotted palevioletred;
+                background: linear-gradient(to right, red, pink, blue);
+                box-shadow: inset 0 0 15px 0 black;
+            }
+            /* for 21C */
+            p{
+                text-align: center;
+                font-size: 50px;
+                color: coral;
+                font-weight: bold;
+                text-decoration: underline;
+                text-decoration-color: blueviolet;
+                text-shadow: 5px 2px 3px orange;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- For 21A -->
+        <div id="d1"><a href="button.html">Click me</a></div>
+        <br>
+        <br>
+       <!-- For 21B -->
+       <div id="d2"></div>
+       <br>
+       <!-- For 21C -->
+       <p>COMPUTER SCIENCE</p>
+    </body>
+</html>

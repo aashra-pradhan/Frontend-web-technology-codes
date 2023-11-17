@@ -1,0 +1,37 @@
+<!-- 24i.  	Write a program to input length breadth and height and print the volume of a cuboid and total surface area -->
+
+<html>
+    <head>
+        <title>lab24i</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter length :");
+            l=parseInt(a);
+            var c=window.prompt("Enter breadth :");
+            b=parseInt(c);
+            var z=window.prompt("Enter height :");
+            h=parseInt(z);
+           
+        }
+
+
+        function vol(){
+            var a=l*b*h;
+            document.write("The vol of cuboid is =" + a + "<br>");
+        }
+
+        function tsa(){
+            var p=2 *(l*h + l*b + h*b) ;
+            document.write("The tsa of cuboid is =" + p + "<br>");
+        }
+
+        input();
+        vol();
+        tsa();
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!-- 24g. 	Write a program to input length and height find area of the triangle. -->
+
+<html>
+    <head>
+        <title>lab24g</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter length of triangle:");
+            l=parseInt(a);
+            var c=window.prompt("Enter height :");
+            b=parseInt(c);
+            // l ra b lai global variable banako to access in every function
+        }
+
+
+        function area(){
+            var a=(1/2)*l*b;
+            document.write("The area of triangle is =" + a + "<br>");
+        }
+
+        input();
+        area();
+
+    </script>
+</body>
+</html>

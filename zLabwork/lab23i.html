@@ -1,0 +1,52 @@
+<!-- Lab 23a
+Design the login form including user name, user password, user type (Admin, Account, Teacher or student) 
+and login button. Decorate it attractively using CSS properties. -->
+
+<html>
+<head>
+	<title>Simple Form</title>
+    <style>
+        h1{
+            text-align: center;
+            margin: 0px;
+            margin-bottom: 25px;
+        }
+        div{
+            background-color: coral;
+            border: 2px solid black;
+            padding: 10px;
+            padding-top: 25px;
+            margin:20px;
+            margin-left: 40px;;
+            width:60%;
+        }
+
+    </style>
+</head>
+<body>
+<div>
+    <h1>LOGIN FORM</h1>
+<form>
+	<label for=Username>User Name:</label>
+	<input type=text name="username">
+	<br>
+	<br>
+
+	<label for=useraddress>User Password:</label>
+	<input type=password name=useraddress>
+	<br>
+	<br>
+	<label for=usergender>User Type:</label>
+	<input type=radio name=usergender>Admin
+	<input type=radio name=usergender>Account
+	<input type=radio name=usergender>Teacher
+    <input type=radio name=usergender>Student
+	<br>
+	<br>
+
+<input type=submit value=Login>
+</form>
+</div>
+</body>
+</html>
+

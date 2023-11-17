@@ -1,0 +1,36 @@
+<!-- 24h. 	Write a program to ask radius of circle and print its circumference and area. -->
+
+<html>
+    <head>
+        <title>lab24h</title>
+    </head>
+<body>
+    <script>
+
+        const pi=3.14;
+
+        function input(){
+            var a=window.prompt("Enter radius of circle:");
+            r=parseInt(a);
+           
+            // r lai global variable banako to access in every function
+        }
+
+
+        function area(){
+            var a=pi*r*r;
+            document.write("The area of square is =" + a + "<br>");
+        }
+
+        function circumference(){
+            var p=2*pi*r;
+            document.write("The perimeter of square is =" + p + "<br>");
+        }
+
+        input();
+        area();
+        circumference();
+
+    </script>
+</body>
+</html>

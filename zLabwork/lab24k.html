@@ -1,0 +1,32 @@
+<!-- 24.k. 	Write a program to input principle amount, rate and time and calculate and print the simple interest. -->
+
+<html>
+    <head>
+        <title>lab24f</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter principal:");
+            var b=window.prompt("Enter rate:");
+            var c=window.prompt("Enter time:");
+            p=parseFloat(a);
+            r=parseFloat(b);
+            t=parseFloat(c);
+           
+            // p,t,r lai global variable banako to access in every function
+        }
+
+
+        function si(){
+            var s=(p*t*r)/100;
+            document.write("The Simple Interest is =" + s);
+        }
+
+        input();
+        si();
+
+    </script>
+</body>
+</html>

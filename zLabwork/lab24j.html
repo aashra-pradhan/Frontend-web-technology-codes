@@ -1,0 +1,35 @@
+
+<!-- 24.j.  	Write a program to calculate the volume and surface area of cube whose length is given be user. -->
+
+<html>
+    <head>
+        <title>lab24f</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter length of square:");
+            l=parseInt(a);
+           
+            // l lai global variable banako to access in every function
+        }
+
+
+        function vol(){
+            var a=l*l*l;
+            document.write("The vol of cube is =" + a + "<br>");
+        }
+
+        function sa(){
+            var p=6*(l*l);
+            document.write("The surface area of cube is =" + p + "<br>");
+        }
+
+        input();
+        vol();
+        sa();
+
+    </script>
+</body>
+</html>

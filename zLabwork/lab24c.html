@@ -1,0 +1,43 @@
+<!-- Lab 24c. Write a program the sum, difference, product of any two numbers given by the user. -->
+
+<html>
+    <head>
+        <title>lab24c</title>
+    </head>
+<body>
+    <script>
+
+        function input(){
+            var a=window.prompt("Enter 1st number:");
+            b=parseInt(a);
+            var c=window.prompt("Enter 2nd number:");
+            d=parseInt(c);
+            // b ra d lai global variable banako to access in every function
+        }
+
+
+        function sum(){
+           var s=b+d;
+           return s;
+        }
+
+        function diff(){
+           var s=b-d;
+           return s;
+        }
+
+        function pro(){
+           var s=b*d;
+           return s;
+        }
+
+        input();
+        var su=sum();
+        var dif=diff();
+        var pr=pro();
+
+        document.write("The sum is "+ su + ", difference is  = "+ dif +" and the product is = "+ pr);
+
+    </script>
+</body>
+</html>
